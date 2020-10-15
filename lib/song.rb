@@ -1,4 +1,5 @@
 class Song
+
   attr_accessor :artist, :name
 
   @@all = []
@@ -22,4 +23,5 @@ class Song
   def artist_name=(name)
     self.artist = Artist.find_or_create_by_name(name)
   end
+  
 end
